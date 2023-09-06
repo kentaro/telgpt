@@ -8,8 +8,7 @@ defmodule Telgpt.Application do
   @impl true
   def start(_type, _args) do
     children = [
-      # Starts a worker by calling: Telgpt.Worker.start_link(arg)
-      # {Telgpt.Worker, arg}
+      {ThousandIsland, port: 23, handler_module: Telgpt}
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
