@@ -1,21 +1,23 @@
-# Telgpt
+# TelGPT
 
-**TODO: Add description**
+A network server that provides an interface to GPT API via text-based protocol.
 
-## Installation
+## Usage
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `telgpt` to your list of dependencies in `mix.exs`:
+Start a server:
 
-```elixir
-def deps do
-  [
-    {:telgpt, "~> 0.1.0"}
-  ]
-end
+```
+iex -S mix
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at <https://hexdocs.pm/telgpt>.
+Access to the server from another terminal:
 
+```
+nc localhost 23
+```
+
+https://github.com/kentaro/telgpt/assets/3458/51ff13a5-829b-4494-b8a8-f94bfa852e1b
+
+## Author
+
+Kentaro Kuribayashi <kentarok@gmail.com>
